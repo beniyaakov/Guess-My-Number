@@ -82,6 +82,11 @@ h1 {
   left: 2rem;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 .guess {
   background: none;
   border: 4px solid #eee;
@@ -93,6 +98,7 @@ h1 {
   text-align: center;
   display: block;
   margin-bottom: 3rem;
+  
 }
 
 .btn {
