@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -82,10 +82,10 @@ h1 {
   left: 2rem;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .guess {
   background: none;
@@ -98,7 +98,6 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   display: block;
   margin-bottom: 3rem;
-  
 }
 
 .btn {
@@ -122,4 +121,38 @@ input[type=number]::-webkit-outer-spin-button {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+  body {
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .header{
+    display: grid;
+    flex-direction: column;
+  }
+
+  main {
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom:5rem;
+    text-align: center;
+  }
+  aside {
+    display: none;
+  }
 }
